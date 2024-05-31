@@ -1,0 +1,10 @@
+her	his	0.50	
+one	two	0.10
+you	me	0.20
+all	one	0.00
+him	her	0.40
+out	in	0.80
+she	he	0.85
+up	down	1.00
+time	clock	0.10
+like	alike	0.25
