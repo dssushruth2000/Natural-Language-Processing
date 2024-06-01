@@ -1,0 +1,188 @@
+-------------------------
+Test example: 0
+Sentence: ['Thousands', 'of', 'demonstrators', 'have', 'marched', 'through', 'London', 'to', 'protest', 'the', 'war', 'in', 'Iraq', 'and', 'demand', 'the', 'withdrawal', 'of', 'British', 'troops', 'from', 'that', 'country', '.']
+Target: ['O', 'O', 'O', 'O', 'O', 'O', 'B-geo', 'O', 'O', 'O', 'O', 'O', 'B-geo', 'O', 'O', 'O', 'O', 'O', 'B-gpe', 'O', 'O', 'O', 'O', 'O']
+Predicted: ['O', 'O', 'O', 'O', 'O', 'O', 'B-geo', 'O', 'O', 'O', 'O', 'O', 'B-geo', 'O', 'O', 'O', 'O', 'O', 'B-gpe', 'O', 'O', 'O', 'O', 'O'] 
+
+At 6 ('geo', 'London') Extracted.
+At 12 ('geo', 'Iraq') Extracted.
+At 18 ('gpe', 'British') Extracted.
+
+
+Evaluation results:
+
+-------------------------
+Test example: 1
+Sentence: ['Scientists', 'have', 'discovered', 'a', 'new', 'species', 'of', 'insect', 'in', 'the', 'Amazon', 'Rainforest', '.']
+Target: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-geo', 'I-geo', 'O']
+Predicted: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-geo', 'I-geo', 'O'] 
+
+At 10 ('geo', 'Amazon Rainforest') Extracted.
+
+
+Evaluation results:
+
+-------------------------
+Test example: 2
+Sentence: ['Artists', 'from', 'around', 'the', 'world', 'gathered', 'in', 'Paris', 'to', 'showcase', 'their', 'latest', 'works', '.']
+Target: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-geo', 'O', 'O', 'O', 'O', 'O', 'O']
+Predicted: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-geo', 'O', 'O', 'O', 'O', 'O', 'O'] 
+
+At 7 ('geo', 'Paris') Extracted.
+
+
+Evaluation results:
+
+-------------------------
+Test example: 3
+Sentence: ['Police', 'put', 'the', 'number', 'of', 'marchers', 'at', '10,000', 'while', 'organizers', 'claimed', 'it', 'was', '1,00,000', '.']
+Target: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+Predicted: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O'] 
+
+
+
+Evaluation results:
+
+-------------------------
+Test example: 4
+Sentence: ['The', 'protest', 'comes', 'on', 'the', 'eve', 'of', 'the', 'annual', 'conference', 'of', 'Britain', "'s", 'ruling', 'Labor', 'Party', 'in', 'the', 'southern', 'English', 'seaside', 'resort', 'of', 'Brighton', '.']
+Target: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-geo', 'O', 'O', 'B-org', 'I-org', 'O', 'O', 'O', 'B-gpe', 'O', 'O', 'O', 'B-geo', 'O']
+Predicted: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-geo', 'O', 'O', 'O', 'I-org', 'O', 'O', 'O', 'I-geo', 'O', 'O', 'O', 'B-geo', 'O'] 
+
+At 11 ('geo', 'Britain') Extracted.
+At 14 ('org', 'Labor Party') Missed.
+At 19 ('gpe', 'English') Missed.
+At 23 ('geo', 'Brighton') Extracted.
+
+
+Evaluation results:
+
+-------------------------
+Test example: 5
+Sentence: ['Astronomers', 'observed', 'a', 'remarkable', 'event', 'involving', 'a', 'galactic', 'collision', '.']
+Target: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+Predicted: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O'] 
+
+
+
+Evaluation results:
+
+-------------------------
+Test example: 6
+Sentence: ['Researchers', 'studied', 'the', 'effects', 'of', 'climate', 'change', 'on', 'local', 'ecosystems', 'in', 'the', 'Arctic', 'region', '.']
+Target: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-geo', 'O', 'O']
+Predicted: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-geo', 'O', 'O'] 
+
+At 12 ('geo', 'Arctic') Extracted.
+
+
+Evaluation results:
+
+-------------------------
+Test example: 7
+Sentence: ['Astronomers', 'observed', 'a', 'cluster', 'of', 'galaxies', 'in', 'the', 'observable', 'universe', '.']
+Target: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+Predicted: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O'] 
+
+
+
+Evaluation results:
+
+-------------------------
+Test example: 8
+Sentence: ['Marine', 'biologists', 'discovered', 'a', 'new', 'species', 'of', 'jellyfish', 'in', 'the', 'deep', 'ocean', '.']
+Target: ['O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']
+Predicted: ['B-org', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O'] 
+
+At 0 ('org', 'Marine') Incorrectly extracted.
+
+
+Evaluation results:
+
+-------------------------
+Test example: 9
+Sentence: ['Iranian', 'officials', 'say', 'they', 'expect', 'to', 'get', 'access', 'to', 'sealed', 'sensitive', 'parts', 'of', 'the', 'plant', 'Wednesday', ',', 'after', 'an', 'IAEA', 'surveillance', 'system', 'begins', 'functioning', '.']
+Target: ['B-gpe', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-tim', 'O', 'O', 'O', 'B-org', 'O', 'O', 'O', 'O', 'O']
+Predicted: ['B-gpe', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'B-tim', 'O', 'O', 'O', 'B-org', 'O', 'O', 'O', 'O', 'O'] 
+
+At 0 ('gpe', 'Iranian') Extracted.
+At 15 ('tim', 'Wednesday') Extracted.
+At 19 ('org', 'IAEA') Extracted.
+
+
+Evaluation results:
+
+
+Entity type: geo
+Total entities: 7
+Total predicted: 7
+Correctly extracted: 7
+Precision: 100.0 %
+Recall: 100.0 %
+F-measure: 100.0 %
+
+Entity type: gpe
+Total entities: 3
+Total predicted: 2
+Correctly extracted: 2
+Precision: 100.0 %
+Recall: 66.67 %
+F-measure: 80.0 %
+
+Entity type: per
+Total entities: 0
+Total predicted: 0
+Correctly extracted: 0
+Precision cannot be computed.
+Recall cannot be computed.
+F-measure cannot be computed.
+
+Entity type: org
+Total entities: 2
+Total predicted: 2
+Correctly extracted: 1
+Precision: 50.0 %
+Recall: 50.0 %
+F-measure: 50.0 %
+
+Entity type: tim
+Total entities: 1
+Total predicted: 1
+Correctly extracted: 1
+Precision: 100.0 %
+Recall: 100.0 %
+F-measure: 100.0 %
+
+Entity type: art
+Total entities: 0
+Total predicted: 0
+Correctly extracted: 0
+Precision cannot be computed.
+Recall cannot be computed.
+F-measure cannot be computed.
+
+Entity type: nat
+Total entities: 0
+Total predicted: 0
+Correctly extracted: 0
+Precision cannot be computed.
+Recall cannot be computed.
+F-measure cannot be computed.
+
+Entity type: eve
+Total entities: 0
+Total predicted: 0
+Correctly extracted: 0
+Precision cannot be computed.
+Recall cannot be computed.
+F-measure cannot be computed.
+
+
+All entities combined:
+
+Total entities: 13
+Total predicted: 12
+Correctly extracted: 11
+Precision: 91.67 %
+Recall: 84.62 %
+F-measure: 88.0 %
