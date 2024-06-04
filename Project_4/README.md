@@ -32,6 +32,7 @@ python A4.py
 
 ## Files
 - `A4.py`: Contains the code to load the dataset, fine-tune the BERT model, and evaluate its performance.
+- `dataset_download.py`: To download the dataset.
 - `report.pdf`: Includes a detailed report of the project outcomes, methodology, and observations regarding the model's performance and contextual embeddings.
 - `dataset_train.txt`: Text file containing the training data.
 - `dataset_test.txt`: Text file containing the testing data.
